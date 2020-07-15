@@ -1,4 +1,4 @@
-https://app.circleci.com/pipelines/github/winphyo
+[![CircleCI](https://app.circleci.com/pipelines/github/winphyo.svg?style=svg)](https://app.circleci.com/pipelines/github/winphyo)
 
 ## Project Overview
 
