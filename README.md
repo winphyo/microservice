@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/winphyo/microservice.svg?style=svg)]https://circleci.com/gh/winphyo/microservice)
+[![CircleCI](https://circleci.com/gh/winphyo/microservice.svg?style=svg)](https://circleci.com/gh/winphyo/microservice)
 
 ## Project Overview
 
