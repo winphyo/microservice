@@ -1,0 +1,22 @@
+<paste log output from Kubernetes-mediated prediction, here>
+C:\Users\Win Phyo\Development\DevOps_Microservices\project-ml-microservice-kubernetes>kubectl get pod
+NAME                                  READY   STATUS             RESTARTS   AGE
+backend-feed-564d45bf57-mpv49         1/1     Running            11         140d
+backend-feed-564d45bf57-tqlgc         1/1     Running            13         140d
+backend-user-677d9f59dd-5w7dq         1/1     Running            12         140d
+backend-user-677d9f59dd-sv448         0/1     OOMKilled          12         140d
+frontend-5468c6fc74-nckzd             1/1     Running            2          140d
+microservice-local                    1/1     Running            0          14m
+predict-758d744f8b-nb5bx              1/1     Running            0          20m
+reverseproxy-5bbc4b8996-tzb5r         0/1     CrashLoopBackOff   19         140d
+
+
+2020-07-15 09:53:52,955] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-07-15 09:53:53,068] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-15 09:53:53,111] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+127.0.0.1 - - [15/Jul/2020 09:53:53] "POST /predict HTTP/1.1" 200 -
