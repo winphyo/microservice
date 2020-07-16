@@ -40,12 +40,15 @@ predict-758d744f8b-nb5bx              1/1     Running            0          20m
 reverseproxy-5bbc4b8996-tzb5r         0/1     CrashLoopBackOff   19         140d
 
 
-2020-07-15 09:53:52,955] INFO in app: JSON payload: 
+127.0.0.1 - - [16/Jul/2020 03:20:31] "POST /predict HTTP/1.1" 200 -
+[2020-07-16 03:34:44,661] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2020-07-15 09:53:53,068] INFO in app: Inference payload DataFrame: 
+[2020-07-16 03:34:44,746] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2020-07-15 09:53:53,111] INFO in app: Scaling Payload: 
+[2020-07-16 03:34:44,838] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-127.0.0.1 - - [15/Jul/2020 09:53:53] "POST /predict HTTP/1.1" 200 -
+[2020-07-16 03:34:44,938] INFO in app: prediction output is here==>: 
+[20.35373177134412]
+127.0.0.1 - - [16/Jul/2020 03:34:44] "POST /predict HTTP/1.1" 200 -
