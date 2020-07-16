@@ -1,4 +1,33 @@
 <paste log output from Kubernetes-mediated prediction, here>
+$ curl -d '{  
+>    "CHAS":{  
+>       "0":0
+>    },
+>    "RM":{  
+>       "0":6.575
+>    },
+>    "TAX":{  
+>       "0":296.0
+>    },
+>    "PTRATIO":{  
+>       "0":15.3
+>    },
+>    "B":{  
+>       "0":396.9
+>    },
+>    "LSTAT":{  
+>       "0":4.98
+>    }
+> }'\
+>      -H "Content-Type: application/json" \
+>      -X POST http://localhost:80/predict
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+     
+      
 C:\Users\Win Phyo\Development\DevOps_Microservices\project-ml-microservice-kubernetes>kubectl get pod
 NAME                                  READY   STATUS             RESTARTS   AGE
 backend-feed-564d45bf57-mpv49         1/1     Running            11         140d
