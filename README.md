@@ -4,9 +4,6 @@
 
 There is a model that  predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. The `app.py`—that serves out predictions (inference) about housing prices through API calls. 
 
-## Docker Hub Location for this project
-[https://hub.docker.com/repository/registry-1.docker.io/wpthein/microservice/](https://hub.docker.com/repository/registry-1.docker.io/wpthein/microservice/)
-
 ### Project Tasks
 
 This project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/) In this project I have done:
