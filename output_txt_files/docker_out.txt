@@ -1,4 +1,14 @@
 <paste log output from Docker prediction, here>
+This is result from ./make_prediction.sh 
+ec2-user:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+This is from backend log-
 [2020-07-15 06:03:49,835] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
 [2020-07-15 06:03:49,849] INFO in app: Inference payload DataFrame: 
